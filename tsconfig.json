@@ -1,8 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2015",
     "module": "commonjs",
     "sourceMap": true,
-    "outDir": "./dist/"
+    "outDir": "./dist/",
+    "strict": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "es2015",
+      "es2015.collection"
+    ],
   }
 }

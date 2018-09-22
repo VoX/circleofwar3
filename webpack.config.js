@@ -7,6 +7,7 @@ const webpackMerge = require("webpack-merge");
 const modeConfig = env => require(`./build-utils/webpack.${env}`)(env);
 
 module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
+  console.log(mode);
   return webpackMerge({
     entry: './src/index.ts',
     mode,
@@ -17,7 +18,7 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
           test: /\.js$/,
           use: ["source-map-loader"],
           exclude: [
-            path.resolve(__dirname,'node_modules/excalibur')
+            path.resolve(__dirname, 'node_modules/excalibur')
           ],
           enforce: "pre",
         },
@@ -53,10 +54,10 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
     plugins: [
       new CleanWebpackPlugin(['dist']),
       new HtmlWebPackPlugin({
-        title: 'Excalibur Webpack Sample'
+        title: 'Cow3'
       })
     ]
   },
-  modeConfig(mode)
+    modeConfig(mode)
   );
 };
