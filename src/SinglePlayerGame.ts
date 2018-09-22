@@ -1,4 +1,4 @@
-import ex = require("excalibur");
+import * as ex from "excalibur";
 import { DemoResources } from "./scenes/DemoResources";
 import { DemoScene } from "./scenes/DemoScene";
 

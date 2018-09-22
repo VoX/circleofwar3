@@ -23,9 +23,9 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
           enforce: "pre",
         },
         {
-          test: /\.ts?$/,
-          use: 'ts-loader',
-          exclude: /node_modules/
+          test: /\.(tsx?)|(js)$/,
+          exclude: /node_modules/,
+          loader: 'babel-loader',
         },
         {
           test: /\.(png|jpg|bmp)$/,
@@ -52,7 +52,7 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
       }
     },
     plugins: [
-      new CleanWebpackPlugin(['dist']),
+      new CleanWebpackPlugin(['dist', 'lib']),
       new HtmlWebPackPlugin({
         title: 'Cow3'
       })
