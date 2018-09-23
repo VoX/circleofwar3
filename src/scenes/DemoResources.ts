@@ -1,9 +1,9 @@
-import * as ex from "excalibur";
-import * as sword from "../images/sword.png";
-import { IMap } from "../IMap";
+import { Texture } from "excalibur";
+import * as fighter_sm from "../images/fighter-sm.png";
+import { IMap } from "../map";
 
 const DemoResources: IMap<ex.Texture> = {
-    Sword: new ex.Texture(sword),
+    Fighter: new Texture(fighter_sm),
 };
 
 export { DemoResources };

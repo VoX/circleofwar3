@@ -8,3 +8,7 @@ To start debugging your code, run ```start``` for the **development** script. It
 When you are ready to go, compile a **production** version with ```build``` script or choose the appropriate task from VSCode, then check out the **/dist** folder.
 
 **Please note:** when running `npm start` or `yarn start`, the webpack-dev-server generates your files virtually so you won't find them in your /dist folder.
+
+
+## TODO
+- integrate https://www.mapeditor.org/

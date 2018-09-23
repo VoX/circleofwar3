@@ -54,7 +54,7 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
     plugins: [
       new CleanWebpackPlugin(['dist', 'lib']),
       new HtmlWebPackPlugin({
-        title: 'Cow3'
+        title: 'Cow3',
       })
     ]
   },

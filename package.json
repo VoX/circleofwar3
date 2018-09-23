@@ -39,6 +39,7 @@
     "webpack-merge": "4.1.4"
   },
   "dependencies": {
-    "excalibur": "0.18.0"
+    "excalibur": "0.18.0",
+    "reinstall": "^2.0.0"
   }
 }

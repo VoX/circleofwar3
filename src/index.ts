@@ -1,4 +1,4 @@
-import { SinglePlayerGame } from "./SinglePlayerGame";
+import { SinglePlayerGame } from "./singlePlayerGame";
 
 const game = new SinglePlayerGame();
 
